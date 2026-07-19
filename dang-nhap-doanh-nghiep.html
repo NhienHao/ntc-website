@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Đăng nhập doanh nghiệp | Nam Tân Uyên</title>
+  <meta name="description" content="Đăng nhập dành cho doanh nghiệp — KCN Nam Tân Uyên." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="login-body">
+  <div class="ntu-login-page">
+    <div class="ntu-login-bg" aria-hidden="true"></div>
+    <div class="ntu-login-content">
+      <div class="ntu-login-card">
+        <a class="ntu-back-home" href="index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i> Về trang chủ</a>
+        <div class="ntu-login-brand">
+          <img class="ntu-login-logo" src="assets/img/dang-nhap/logo-dn.png" alt="Công ty Cổ phần Khu công nghiệp Nam Tân Uyên" />
+        </div>
+        <form class="ntu-login-form" action="#" method="post" data-login-form="doanh-nghiep">
+          <div class="ntu-login-field">
+            <label class="ntu-login-label" for="UserName">Tên đăng nhập</label>
+            <div class="ntu-login-input-wrap">
+              <input class="ntu-login-input" id="UserName" name="UserName" type="text" autocomplete="username" placeholder="Nhập MST doanh nghiệp" required />
+            </div>
+            <div class="ntu-login-field-error" data-error-user></div>
+          </div>
+          <div class="ntu-login-field">
+            <label class="ntu-login-label" for="Password">Mật khẩu</label>
+            <div class="ntu-login-input-wrap">
+              <input class="ntu-login-input" id="Password" name="Password" type="password" autocomplete="current-password" placeholder="Nhập mã bảo mật" required />
+              <button type="button" class="ntu-login-toggle-pass" data-toggle-pass aria-label="Hiện mật khẩu"><i class="fa fa-eye-slash" aria-hidden="true"></i></button>
+            </div>
+            <div class="ntu-login-field-error" data-error-pass></div>
+          </div>
+          <div class="ntu-login-options">
+            <label class="ntu-login-remember" for="remember">
+              <input type="checkbox" id="remember" name="remember" />
+              <span>Ghi nhớ mật khẩu</span>
+            </label>
+          </div>
+          <button type="submit" class="ntu-login-btn"><span>Đăng nhập</span></button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Báo cáo tài chính | Nam Tân Uyên</title>
+  <meta name="description" content="BÁO CÁO TÀI CHÍNH — Công ty Cổ phần Khu công nghiệp Nam Tân Uyên." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="ntu-header">
+    <div class="ntu-header-top">
+      <a class="ntu-brand" href="index.html">
+        <img src="assets/img/home/logo.png" alt="Logo Nam Tân Uyên" width="64" height="82" />
+        <h1>CÔNG TY CỔ PHẦN KHU CÔNG NGHIỆP NAM TÂN UYÊN</h1>
+      </a>
+      <div class="lang-switch" aria-label="Ngôn ngữ">
+        <button type="button" class="lang-btn active"><span>VN</span></button>
+        <button type="button" class="lang-btn"><span>EN</span></button>
+        <button type="button" class="lang-btn"><span>CN</span></button>
+      </div>
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="ntu-nav main-nav" aria-label="Chính">
+      <ul>
+        <li><a href="index.html">TRANG CHỦ</a></li>
+        <li class="has-sub">
+          <a href="gioi-thieu.html">GIỚI THIỆU</a>
+          <ul class="sub">
+            <li><a href="gioi-thieu-tong-quan.html">Giới thiệu tổng quan</a></li>
+            <li><a href="lich-su.html">Dấu mốc lịch sử</a></li>
+            <li><a href="so-do-to-chuc.html">Sơ đồ tổ chức</a></li>
+            <li><a href="tiem-luc.html">Tiềm lực &amp; lợi thế</a></li>
+          </ul>
+        </li>
+        <li class="has-sub">
+          <a href="cac-du-an.html">CÁC DỰ ÁN</a>
+          <ul class="sub">
+            <li><a href="cac-du-an.html">Tổng quan dự án</a></li>
+            <li><a href="kcn-ntc1.html">KCN Nam Tân Uyên</a></li>
+            <li><a href="kcn-gd1.html">Mở rộng giai đoạn I</a></li>
+            <li><a href="kcn-gd2.html">Mở rộng giai đoạn II</a></li>
+          </ul>
+        </li>
+        <li><a href="cong-ty-lien-ket.html">CÁC CÔNG TY KCN LIÊN KẾT</a></li>
+        <li><a href="tu-van-dau-tu.html">TƯ VẤN ĐẦU TƯ</a></li>
+        <li class="has-sub is-active">
+          <a href="quan-he-co-dong.html">QUAN HỆ CỔ ĐÔNG</a>
+          <ul class="sub">
+            <li><a href="thong-bao-co-dong.html">Thông báo cổ đông</a></li>
+            <li><a href="dai-hoi-co-dong.html">Đại hội cổ đông</a></li>
+            <li><a href="bao-cao-tai-chinh.html" class="is-active">Báo cáo tài chính</a></li>
+            <li><a href="dieu-le.html">Điều lệ &amp; quy chế</a></li>
+          </ul>
+        </li>
+        <li class="has-sub">
+          <a href="tra-cuu.html">TRA CỨU</a>
+          <ul class="sub">
+            <li><a href="moi-truong.html">Thông tin môi trường</a></li>
+            <li><a href="dau-thau.html">Thông tin đấu thầu</a></li>
+          </ul>
+        </li>
+        <li class="has-sub">
+          <a href="thu-vien.html">THƯ VIỆN ĐA PHƯƠNG TIỆN</a>
+          <ul class="sub">
+            <li><a href="tin-tuc.html">Tin tức</a></li>
+            <li><a href="tin-video.html">Tin video</a></li>
+            <li><a href="e-brochure.html">E-Brochure</a></li>
+          </ul>
+        </li>
+        <li><a href="tuyen-dung.html">TUYỂN DỤNG</a></li>
+        <li><a href="lien-he.html">LIÊN HỆ</a></li>
+
+        <li class="has-sub">
+          <a href="#">ĐĂNG NHẬP</a>
+          <ul class="sub">
+            <li><a href="dang-nhap-doanh-nghiep.html">DOANH NGHIỆP</a></li>
+            <li><a href="dang-nhap-ntc.html">NTC</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <nav class="ntu-breadcrumb" aria-label="breadcrumb">
+      <div class="wrap">
+        <a href="index.html">TRANG CHỦ</a>
+        <span>/</span>
+        <a href="quan-he-co-dong.html">QUAN HỆ CỔ ĐÔNG</a>
+        <span>/</span>
+        <span>BÁO CÁO TÀI CHÍNH</span>
+      </div>
+    </nav>
+
+    <section class="news-template-121 page-docs" data-doc-list>
+      <div class="wrap docs-inner">
+        <div class="docs-toolbar">
+          <label for="doc-year">Năm</label>
+          <select id="doc-year" class="docs-year" data-doc-year>
+            <option value="">Tất cả các năm</option>
+              <option value="2026">2026</option>
+              <option value="2025">2025</option>
+          </select>
+        </div>
+        <div class="docs-list" data-doc-items>
+            <div class="doc-item" data-year="2026">
+              <div class="doc-stt">1</div>
+              <div class="doc-body">
+                <div class="doc-title">Giải trình liên quan đến BCTC quý 2 năm 2026</div>
+                <div class="doc-date"><i class="fa fa-calendar" aria-hidden="true"></i> 15/07/2026</div>
+              </div>
+              <a class="doc-download" href="assets/docs/bao-cao-tai-chinh/20260716141807614_20260715_NTC_Giai_trinh_lien_quan_den_BCTC_QII._2026.pdf" download title="20260716141807614_20260715_NTC_Giai_trinh_lien_quan_den_BCTC_QII._2026.pdf">
+                <span>Tải về</span>
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="doc-item" data-year="2026">
+              <div class="doc-stt">2</div>
+              <div class="doc-body">
+                <div class="doc-title">Báo cáo tài chính quý 2 năm 2026</div>
+                <div class="doc-date"><i class="fa fa-calendar" aria-hidden="true"></i> 15/07/2026</div>
+              </div>
+              <a class="doc-download" href="assets/docs/bao-cao-tai-chinh/20260716141632101_20260715_NTC_Bao_cao_tai_chinh_quy_II._2026.pdf" download title="20260716141632101_20260715_NTC_Bao_cao_tai_chinh_quy_II._2026.pdf">
+                <span>Tải về</span>
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="doc-item" data-year="2026">
+              <div class="doc-stt">3</div>
+              <div class="doc-body">
+                <div class="doc-title">Báo cáo tài chính quý 1 năm 2026</div>
+                <div class="doc-date"><i class="fa fa-calendar" aria-hidden="true"></i> 16/04/2026</div>
+              </div>
+              <a class="doc-download" href="assets/docs/bao-cao-tai-chinh/20260417084400274_20260416 - NTC -  Bao Cao Tai Chinh Quy 1.2026.pdf" download title="20260417084400274_20260416 - NTC -  Bao Cao Tai Chinh Quy 1.2026.pdf">
+                <span>Tải về</span>
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="doc-item" data-year="2026">
+              <div class="doc-stt">4</div>
+              <div class="doc-body">
+                <div class="doc-title">Giải trình liên quan BCTC quý 1 năm 2026</div>
+                <div class="doc-date"><i class="fa fa-calendar" aria-hidden="true"></i> 16/04/2026</div>
+              </div>
+              <a class="doc-download" href="assets/docs/bao-cao-tai-chinh/20260417084521056_20260416 - NTC - Giai trinh lien quan den BCTC Q.I - 2026.pdf.pdf" download title="20260417084521056_20260416 - NTC - Giai trinh lien quan den BCTC Q.I - 2026.pdf.pdf">
+                <span>Tải về</span>
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="doc-item" data-year="2026">
+              <div class="doc-stt">5</div>
+              <div class="doc-body">
+                <div class="doc-title">Giải trình chênh lệch năm 2025</div>
+                <div class="doc-date"><i class="fa fa-calendar" aria-hidden="true"></i> 13/03/2026</div>
+              </div>
+              <a class="doc-download" href="assets/docs/bao-cao-tai-chinh/20260324082626273_20260313 - NTC - Giai trinh lien quan den BCTC 2025.pdf" download title="20260324082626273_20260313 - NTC - Giai trinh lien quan den BCTC 2025.pdf">
+                <span>Tải về</span>
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="doc-item" data-year="2026">
+              <div class="doc-stt">6</div>
+              <div class="doc-body">
+                <div class="doc-title">Báo cáo tài chính kiểm toán năm 2025</div>
+                <div class="doc-date"><i class="fa fa-calendar" aria-hidden="true"></i> 13/03/2026</div>
+              </div>
+              <a class="doc-download" href="assets/docs/bao-cao-tai-chinh/2026031609432225_20260313 -NTC - Bao cao tai chinh kiem toan - 2025.pdf" download title="2026031609432225_20260313 -NTC - Bao cao tai chinh kiem toan - 2025.pdf">
+                <span>Tải về</span>
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="doc-item" data-year="2026">
+              <div class="doc-stt">7</div>
+              <div class="doc-body">
+                <div class="doc-title">Báo cáo tình hình quản trị công ty niêm yết năm 2025</div>
+                <div class="doc-date"><i class="fa fa-calendar" aria-hidden="true"></i> 26/01/2026</div>
+              </div>
+              <a class="doc-download" href="assets/docs/bao-cao-tai-chinh/20260324084712888_20260126162957188_20260126 - NTC - Bao cao quan tri nam 2025 - Full.pdf" download title="20260324084712888_20260126162957188_20260126 - NTC - Bao cao quan tri nam 2025 - Full.pdf">
+                <span>Tải về</span>
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="doc-item" data-year="2026">
+              <div class="doc-stt">8</div>
+              <div class="doc-body">
+                <div class="doc-title">Báo cáo tài chính quý 4 năm 2025</div>
+                <div class="doc-date"><i class="fa fa-calendar" aria-hidden="true"></i> 19/01/2026</div>
+              </div>
+              <a class="doc-download" href="assets/docs/bao-cao-tai-chinh/20260119162257821_20260119-NTC-BCTC QUY 4 2025 VN.pdf" download title="20260119162257821_20260119-NTC-BCTC QUY 4 2025 VN.pdf">
+                <span>Tải về</span>
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="doc-item" data-year="2026">
+              <div class="doc-stt">9</div>
+              <div class="doc-body">
+                <div class="doc-title">Giải trình chênh lệch Quý 4 năm 2025</div>
+                <div class="doc-date"><i class="fa fa-calendar" aria-hidden="true"></i> 18/01/2026</div>
+              </div>
+              <a class="doc-download" href="assets/docs/bao-cao-tai-chinh/20260119162446307_20260119-NTC-Giải trinh KQKD QUY 4 2025.pdf" download title="20260119162446307_20260119-NTC-Giải trinh KQKD QUY 4 2025.pdf">
+                <span>Tải về</span>
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="doc-item" data-year="2026">
+              <div class="doc-stt">10</div>
+              <div class="doc-body">
+                <div class="doc-title">Báo cáo tài chính quý 4 năm 2025</div>
+                <div class="doc-date"><i class="fa fa-calendar" aria-hidden="true"></i> 18/01/2026</div>
+              </div>
+              <a class="doc-download" href="assets/docs/bao-cao-tai-chinh/20260119163102876_20260119-NTC-BCTC QUY 4 2025 EN.pdf" download title="20260119163102876_20260119-NTC-BCTC QUY 4 2025 EN.pdf">
+                <span>Tải về</span>
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="doc-item" data-year="2025">
+              <div class="doc-stt">11</div>
+              <div class="doc-body">
+                <div class="doc-title">Financial Statements Q.3 - 2025</div>
+                <div class="doc-date"><i class="fa fa-calendar" aria-hidden="true"></i> 20/10/2025</div>
+              </div>
+              <a class="doc-download" href="assets/docs/bao-cao-tai-chinh/20260112110555927_EN_FinancialStatements Q.3-2025-TA.pdf" download title="20260112110555927_EN_FinancialStatements Q.3-2025-TA.pdf">
+                <span>Tải về</span>
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="doc-item" data-year="2025">
+              <div class="doc-stt">12</div>
+              <div class="doc-body">
+                <div class="doc-title">Báo cáo tài chính Q3 - 2025</div>
+                <div class="doc-date"><i class="fa fa-calendar" aria-hidden="true"></i> 20/10/2025</div>
+              </div>
+              <a class="doc-download" href="assets/docs/bao-cao-tai-chinh/20251223083614733_baocaotaichinh q3-2025 tv.pdf" download title="20251223083614733_baocaotaichinh q3-2025 tv.pdf">
+                <span>Tải về</span>
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="doc-item" data-year="2025">
+              <div class="doc-stt">13</div>
+              <div class="doc-body">
+                <div class="doc-title">Giải trình chênh lệch Q3 2025</div>
+                <div class="doc-date"><i class="fa fa-calendar" aria-hidden="true"></i> 20/10/2025</div>
+              </div>
+              <a class="doc-download" href="assets/docs/bao-cao-tai-chinh/20251223083514836_giải trình chênh lệch q3-2025_tviệt.pdf" download title="20251223083514836_giải trình chênh lệch q3-2025_tviệt.pdf">
+                <span>Tải về</span>
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="doc-item" data-year="2025">
+              <div class="doc-stt">14</div>
+              <div class="doc-body">
+                <div class="doc-title">Báo cáo tài chính bán niên năm 2025</div>
+                <div class="doc-date"><i class="fa fa-calendar" aria-hidden="true"></i> 12/08/2025</div>
+              </div>
+              <a class="doc-download" href="assets/docs/bao-cao-tai-chinh/20251223083708134_vi_baocaotaichinh_bannien_2025.pdf" download title="20251223083708134_vi_baocaotaichinh_bannien_2025.pdf">
+                <span>Tải về</span>
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="doc-item" data-year="2025">
+              <div class="doc-stt">15</div>
+              <div class="doc-body">
+                <div class="doc-title">Financial Statements Q.2 - 2025</div>
+                <div class="doc-date"><i class="fa fa-calendar" aria-hidden="true"></i> 17/07/2025</div>
+              </div>
+              <a class="doc-download" href="assets/docs/bao-cao-tai-chinh/20260112110757227_EN_FinancialStatements_Q2_2025.pdf" download title="20260112110757227_EN_FinancialStatements_Q2_2025.pdf">
+                <span>Tải về</span>
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="doc-item" data-year="2025">
+              <div class="doc-stt">16</div>
+              <div class="doc-body">
+                <div class="doc-title">Báo cáo tài chính Q2 - 2025</div>
+                <div class="doc-date"><i class="fa fa-calendar" aria-hidden="true"></i> 17/07/2025</div>
+              </div>
+              <a class="doc-download" href="assets/docs/bao-cao-tai-chinh/20260112105940234_VI_BaoCaoTaiChinh_Q2_2025.pdf" download title="20260112105940234_VI_BaoCaoTaiChinh_Q2_2025.pdf">
+                <span>Tải về</span>
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="doc-item" data-year="2025">
+              <div class="doc-stt">17</div>
+              <div class="doc-body">
+                <div class="doc-title">Financial Statements Q.1 - 2025</div>
+                <div class="doc-date"><i class="fa fa-calendar" aria-hidden="true"></i> 17/04/2025</div>
+              </div>
+              <a class="doc-download" href="assets/docs/bao-cao-tai-chinh/20260112110658647_EN_FinancialStatements_Q1_2025.pdf.pdf" download title="20260112110658647_EN_FinancialStatements_Q1_2025.pdf.pdf">
+                <span>Tải về</span>
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="doc-item" data-year="2025">
+              <div class="doc-stt">18</div>
+              <div class="doc-body">
+                <div class="doc-title">Báo cáo tài chính Q1 - 2025</div>
+                <div class="doc-date"><i class="fa fa-calendar" aria-hidden="true"></i> 17/04/2025</div>
+              </div>
+              <a class="doc-download" href="assets/docs/bao-cao-tai-chinh/20260112110050626_VI_BaoCaoTaiChinh_Q1_2025.pdf.pdf" download title="20260112110050626_VI_BaoCaoTaiChinh_Q1_2025.pdf.pdf">
+                <span>Tải về</span>
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="doc-item" data-year="2025">
+              <div class="doc-stt">19</div>
+              <div class="doc-body">
+                <div class="doc-title">Báo cáo tài chính - Kiểm toán 2024</div>
+                <div class="doc-date"><i class="fa fa-calendar" aria-hidden="true"></i> 19/03/2025</div>
+              </div>
+              <a class="doc-download" href="assets/docs/bao-cao-tai-chinh/20260112110855305_VI_BaoCaoTaiChinh_KiemToan_2024.pdf" download title="20260112110855305_VI_BaoCaoTaiChinh_KiemToan_2024.pdf">
+                <span>Tải về</span>
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="doc-item" data-year="2025">
+              <div class="doc-stt">20</div>
+              <div class="doc-body">
+                <div class="doc-title">Audited Financial Statements - 2024</div>
+                <div class="doc-date"><i class="fa fa-calendar" aria-hidden="true"></i> 19/03/2025</div>
+              </div>
+              <a class="doc-download" href="assets/docs/bao-cao-tai-chinh/20260112110449786_EN_AuditedFinancialStatements_2024.pdf" download title="20260112110449786_EN_AuditedFinancialStatements_2024.pdf">
+                <span>Tải về</span>
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+              </a>
+            </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ntu-footer">
+    <div class="wrap footer-main">
+      <div class="footer-info">
+        <h3>CÔNG TY CỔ PHẦN KHU CÔNG NGHIỆP NAM TÂN UYÊN</h3>
+        <p><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:02743652330">0274 3652 330</a></p>
+        <p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:kinhdoanh@namtanuyen.com.vn">kinhdoanh@namtanuyen.com.vn</a></p>
+        <p><i class="fa fa-map-marker" aria-hidden="true"></i> Đường ĐT 747B, Khu phố Long Bình, Phường Tân Hiệp, Thành phố Hồ Chí Minh.</p>
+      </div>
+      <div class="footer-map">
+        <iframe title="Bản đồ Nam Tân Uyên" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Khu%20c%C3%B4ng%20nghi%E1%BB%87p%20Nam%20T%C3%A2n%20Uy%C3%AAn&z=14&output=embed" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="footer-copy">Copyright © 2025 All rights reserved.</div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
