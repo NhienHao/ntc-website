@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Heavy local media (keep on disk, do not push)
+/public/assets/docs/
+/public/assets/video/
+*.mp4
+
+# Probe / scrape scratch
+/tmp-extract/
